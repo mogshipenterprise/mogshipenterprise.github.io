@@ -804,3 +804,24 @@ footer .footer-manu ul li a {
 footer .footer-manu ul li a:hover {
   color: #000;
 }
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 images per row */
+  gap: 10px; /* Space between images */
+  padding: 20px;
+}
+
+.image-gallery a {
+  display: block;
+}
+
+.image-gallery img {
+  width: 100%; /* Make images fill the grid cells */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Optional: Rounded corners */
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
