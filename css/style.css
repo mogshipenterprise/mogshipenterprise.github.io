@@ -38,6 +38,7 @@ a,
 a:active,
 a:focus,
 a:active {
+  outline: none;
   text-decoration: none !important;
 }
 .section-title {
@@ -56,31 +57,46 @@ a:active {
 /*--
 	Header Start 
 --*/
+
 header {
-  background: #fff;
-  padding: 20px 0;
+    background: #fff;
+    padding: 20px 0;
 }
+
 header .navbar {
-  margin-bottom: 0px;
-  border: 0px;
+    margin-bottom: 0px;
+    border: 0px;
 }
+
 header .navbar-brand {
-  padding-top: 5px;
+    padding-top: 5px;
 }
+
 header .navbar-default {
-  background: none;
-  border: 0px;
+    background-color: white; /* Set background explicitly */
+    border: 0px;
 }
+
 header .navbar-default .navbar-nav {
-  padding-top: 10px;
+    padding-top: 10px;
 }
+
 header .navbar-default .navbar-nav li a {
-  color: #333333;
+  color: black;
   padding: 10px 26px;
   font-size: 15px;
+  transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+  border-radius: 15px; /* Ensures rounded edges even without hover */
 }
-font header .navbar-default .navbar-nav li a:hover {
-  color: #000;
+
+/* Hover Effect */
+/* Rounded hover effect */
+/* Rounded hover effect */
+/* Hover Effect with Gradient */
+header .navbar-default .navbar-nav li a:hover {
+  color: white !important;
+  background: linear-gradient(90deg, #00008B, #4B0082);/* Dark Blue to Dark Purple */
+  border-radius: 25px; 
 }
 /*---------------------------------------------
 					Index Start 
