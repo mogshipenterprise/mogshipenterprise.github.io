@@ -6,28 +6,28 @@
     <title>{% if page.title %}{{ page.title }}{% else %}A dedicated Free Company{% endif %}</title>
     <meta name="description" content="{{ page.description | default: site.description | strip }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}?" type="image/x-icon">
+    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}?" type="image/x-icon">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/owl.carousel.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/ionicons.min.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/animate.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/responsive.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/lightbox.css">
+    <link rel="stylesheet" href="{{ '/css/owl.carousel.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/css/bootstrap.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/css/font-awesome.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/css/ionicons.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/css/animate.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/css/responsive.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/css/lightbox.css' | relative_url }}">
     
     <!-- Js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
-    <script src="{{ site.baseurl }}/js/owl.carousel.min.js"></script>
-    <script src="{{ site.baseurl }}/js/plugins.js"></script>
-    <script src="{{ site.baseurl }}/js/min/waypoints.min.js"></script>
-    <script src="{{ site.baseurl }}/js/jquery.counterup.js"></script>
-    <script src="{{ site.baseurl }}/js/lightbox.js"></script>
-    <script src="{{ site.baseurl }}/js/main.js"></script>
+    <script src="{{ '/js/bootstrap.min.js' | relative_url }}"></script>
+    <script src="{{ '/js/owl.carousel.min.js' | relative_url }}"></script>
+    <script src="{{ '/js/plugins.js' | relative_url }}"></script>
+    <script src="{{ '/js/min/waypoints.min.js' | relative_url }}"></script>
+    <script src="{{ '/js/jquery.counterup.js' | relative_url }}"></script>
+    <script src="{{ '/js/lightbox.js' | relative_url }}"></script>
+    <script src="{{ '/js/main.js' | relative_url }}"></script>
 
 
   </head>
@@ -51,18 +51,18 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ site.baseurl }}/">
-                  <img src="{{ site.baseurl }}/img/logo3.png" alt="Logo">
+                <a class="navbar-brand" href="{{ '/' | relative_url }}">
+                  <img src="{{ '/img/logo3.png' | relative_url }}" alt="Logo">
                 </a>
               </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
-                    <li><a href="{{ site.baseurl }}/">Home</a></li>
-                    <li><a href="{{ site.baseurl }}/#testimonial">About</a></li>
-                    <li><a href="{{ site.baseurl }}/#portfolio-work">Gallery</a></li>
-                    <li><a href="{{ site.baseurl }}/officers/">Officers</a></li>
-                    <li><a href="{{ site.baseurl }}/#contact-form">Contact</a></li>
+                    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                    <li><a href="{{ '/#testimonial' | relative_url }}">About</a></li>
+                    <li><a href="{{ '/#portfolio-work' | relative_url }}">Gallery</a></li>
+                    <li><a href="{{ '/officers/' | relative_url }}">Officers</a></li>
+                    <li><a href="{{ '/#contact-form' | relative_url }}">Contact</a></li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
               </div><!-- /.container-fluid -->
