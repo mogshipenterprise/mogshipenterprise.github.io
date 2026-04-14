@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }}{% else %}A dedicated Free Company{% endif %}</title>
-    <meta name="description" content="">
+    <meta name="description" content="{{ page.description | default: site.description | strip }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="icon" href="/favicon.ico?" type="image/x-icon">
     
@@ -21,21 +20,13 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/css/lightbox.css">
     
     <!-- Js -->
-    <script src="{{ site.baseurl }}/js/vendor/modernizr-2.6.2.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="{{ site.baseurl }}/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
     <script src="{{ site.baseurl }}/js/owl.carousel.min.js"></script>
     <script src="{{ site.baseurl }}/js/plugins.js"></script>
     <script src="{{ site.baseurl }}/js/min/waypoints.min.js"></script>
     <script src="{{ site.baseurl }}/js/jquery.counterup.js"></script>
     <script src="{{ site.baseurl }}/js/lightbox.js"></script>
-
-    <!-- Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="{{ site.baseurl }}/js/google-map-init.js"></script>
-
-
     <script src="{{ site.baseurl }}/js/main.js"></script>
 
 
@@ -68,8 +59,8 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
                     <li><a href="{{ site.baseurl }}/">Home</a></li>
-                    <li><a href="{{ site.baseurl }}/#portfolio-work">Photos</a></li>
-                    <li><a href="{{ site.baseurl }}/rank/">Rank</a></li>
+                    <li><a href="{{ site.baseurl }}/#testimonial">About</a></li>
+                    <li><a href="{{ site.baseurl }}/#portfolio-work">Gallery</a></li>
                     <li><a href="{{ site.baseurl }}/officers/">Officers</a></li>
                     <li><a href="{{ site.baseurl }}/#contact-form">Contact</a></li>
                   </ul>
@@ -88,14 +79,14 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <p>&copy; 2025 mogshipenterprise.com | Design & Developed by <a href="http://www.themefisher.com">Themefisher</a>.</br>FINAL FANTASY XIV © 2010 - 2025 SQUARE ENIX CO., LTD. All Rights Reserved.</p>
+              <p>&copy; 2026 mogshipenterprise.com. Built for the Mogship Enterprise community.</p>
+              <p>FINAL FANTASY XIV © 2010 - 2026 SQUARE ENIX CO., LTD. All Rights Reserved.</p>
             </div>
           </div>
         </div>
       </footer>
               
               
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
     <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
     <script>
       kofiWidgetOverlay.draw('gumifc', {
@@ -105,53 +96,7 @@
         'floating-chat.donateButton.text-color': '#fff'
       });
     </script>
-
-    <!-- Top Button Start -->
-    <style>
-      #myBtn {
-        display: none; /* Hidden by default */
-        position: fixed; /* Fixed/sticky position */
-        bottom: 20px; /* Place the button at the bottom of the page */
-        right: 30px; /* Place the button 30px from the right */
-        z-index: 99; /* Make sure it does not overlap */
-        border: none; /* Remove borders */
-        outline: none; /* Remove outline */
-        background-color: rgba(90, 0, 78, 0.514); /* Set a background color */
-        color: white; /* Text color */
-        cursor: pointer; /* Add a mouse pointer on hover */
-        padding: 15px; /* Some padding */
-        border-radius: 10px; /* Rounded corners */
-        font-size: 18px; /* Increase font size */
-      }
-      
-      #myBtn:hover {
-        background-color: #555; /* Add a dark-grey background on hover */
-      }
-    </style>
-    
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    
-    <script>
-    // Get the button
-    let mybutton = document.getElementById("myBtn");
-    
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-    
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-    </script>
+    <button id="scrollTopButton" class="scroll-top-button" title="Go to top" aria-label="Back to top">Top</button>
     
   
   </body>

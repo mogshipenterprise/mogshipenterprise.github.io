@@ -1,0 +1,17 @@
+<section id="global-header" class="page-hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="block">
+          {% if include.eyebrow %}
+            <div class="hero-eyebrow">{{ include.eyebrow }}</div>
+          {% endif %}
+          <h1>{{ include.title }}</h1>
+          {% if include.text %}
+            <p>{{ include.text }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
