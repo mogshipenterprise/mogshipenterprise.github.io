@@ -1126,6 +1126,7 @@ header .navbar-default .navbar-nav li a:focus {
   color: var(--text-strong);
 }
 
+
 #call-to-action {
   margin: 20px 0 10px;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
@@ -1343,22 +1344,87 @@ header .navbar-default .navbar-nav li a:focus {
   color: var(--text-strong);
 }
 
+.contact-note {
+  margin: 0 0 18px;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+.contact-note-secondary {
+  margin-top: 16px;
+  margin-bottom: 22px;
+}
+
+.contact-cta-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.contact-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 18px;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.contact-cta:hover,
+.contact-cta:focus {
+  transform: translateY(-2px);
+}
+
+.contact-cta-primary {
+  background: linear-gradient(135deg, var(--brand-deep), var(--brand));
+  color: #f8fcff;
+  box-shadow: 0 14px 28px rgba(13, 54, 95, 0.18);
+}
+
+.contact-cta-secondary {
+  border-color: rgba(13, 54, 95, 0.12);
+  background: rgba(13, 106, 168, 0.06);
+  color: var(--brand-deep);
+}
+
 .image-gallery {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-  padding: 0 20px 60px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  padding: 0 12px 48px;
 }
 
 .image-gallery a {
   overflow: hidden;
-  border-radius: 24px;
+  border-radius: 20px;
   box-shadow: var(--shadow-soft);
 }
 
 .image-gallery img {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
-  border-radius: 24px;
+  border-radius: 20px;
+}
+
+.gallery-page-section {
+  padding-bottom: 16px;
+}
+
+.gallery-page-section h2 {
+  margin: 0 0 10px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--text-strong);
+}
+
+.gallery-page-section p {
+  margin: 0 0 28px;
+  max-width: 760px;
+  color: var(--text-muted);
 }
 
 .content-section {
@@ -1451,6 +1517,97 @@ header .navbar-default .navbar-nav li a:focus {
   margin: 24px auto 0;
 }
 
+.perks-section {
+  padding-bottom: 36px;
+}
+
+.perks-section-tight {
+  padding-top: 0;
+}
+
+.perks-table-card,
+.fc-colors-card {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.perks-table {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.9fr) minmax(0, 2fr);
+  align-items: start;
+}
+
+.perks-table-head,
+.perks-table-cell {
+  padding: 16px 18px;
+  border-bottom: 1px solid rgba(64, 97, 143, 0.14);
+}
+
+.perks-table-head {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-strong);
+}
+
+.perks-table-cell {
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.perks-table-rank {
+  color: var(--text-strong);
+  font-weight: 700;
+}
+
+.fc-colors-card {
+  text-align: center;
+}
+
+.fc-colors-note {
+  max-width: 760px;
+  margin: 0 auto 18px;
+  color: var(--text-muted);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.fc-colors-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 28px 0 30px;
+}
+
+.fc-color-chip {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.fc-color-othard {
+  color: #3a6fe6;
+}
+
+.fc-color-sky {
+  color: #4fa6ff;
+}
+
+.fc-color-lavender {
+  color: #b589ff;
+}
+
+.fc-colors-links {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+
 footer {
   background: rgba(14, 29, 49, 0.96);
   color: rgba(229, 240, 248, 0.76);
@@ -1506,6 +1663,23 @@ footer a {
 
   .officer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .perks-table {
+    grid-template-columns: 1fr;
+  }
+
+  .perks-table-head {
+    display: none;
+  }
+
+  .perks-table-cell {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .perks-table-cell:nth-child(3n + 1) {
+    padding-top: 22px;
   }
 }
 
@@ -1585,6 +1759,10 @@ footer a {
     height: 96px;
   }
 
+  .fc-color-chip {
+    font-size: 24px;
+  }
+
   #global-header.page-hero .block p {
     font-size: 16px;
   }
@@ -1598,12 +1776,24 @@ footer a {
   }
 
   .image-gallery {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     padding: 0 15px 40px;
   }
 
   #contact-form .block,
   #contact-box .block {
     padding: 22px;
+  }
+
+  .contact-cta-group {
+    flex-direction: column;
+  }
+
+  .contact-cta {
+    width: 100%;
+  }
+
+  .fc-colors-links {
+    flex-direction: column;
   }
 }
