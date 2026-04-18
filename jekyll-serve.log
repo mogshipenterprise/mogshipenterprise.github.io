@@ -1,0 +1,173 @@
+Configuration file: C:/Users/alanl/Desktop/mogshipenterprise.github.io-main/_config.yml
+            Source: C:/Users/alanl/Desktop/mogshipenterprise.github.io-main
+       Destination: C:/Users/alanl/Desktop/mogshipenterprise.github.io-main/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+                    done in 1.517 seconds.
+ Auto-regeneration: enabled for 'C:/Users/alanl/Desktop/mogshipenterprise.github.io-main'
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
+[2026-04-18 03:14:21] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:6 
+	C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/webrick-1.9.1/lib/webrick/httpserver.rb:82:in 'IO#eof?'
+	C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/webrick-1.9.1/lib/webrick/httpserver.rb:82:in 'WEBrick::HTTPServer#run'
+	C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/webrick-1.9.1/lib/webrick/server.rb:310:in 'block in WEBrick::GenericServer#start_thread'
+[2026-04-18 03:14:45] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:6 
+	C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/webrick-1.9.1/lib/webrick/httpserver.rb:82:in 'IO#eof?'
+	C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/webrick-1.9.1/lib/webrick/httpserver.rb:82:in 'WEBrick::HTTPServer#run'
+	C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/webrick-1.9.1/lib/webrick/server.rb:310:in 'block in WEBrick::GenericServer#start_thread'
+      Regenerating: 1 file(s) changed at 2026-04-18 03:18:03
+                    _includes/portfolio-work.html
+       Jekyll Feed: Generating feed for posts
+                    ...done in 0.5833428 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-18 03:19:27
+                    _includes/portfolio-work.html
+       Jekyll Feed: Generating feed for posts
+                    ...done in 0.7230136 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-18 03:19:56
+                    _includes/portfolio-work.html
+       Jekyll Feed: Generating feed for posts
+                    ...done in 0.2008267 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-18 03:20:34
+                    _includes/portfolio-work.html
+       Jekyll Feed: Generating feed for posts
+                    ...done in 0.6658888 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-18 03:21:41
+                    _includes/portfolio-work.html
+       Jekyll Feed: Generating feed for posts
+                    ...done in 0.2575806 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-18 03:22:13
+                    _includes/portfolio-work.html
+       Jekyll Feed: Generating feed for posts
+                    ...done in 0.2335094 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-18 03:22:53
+                    _includes/portfolio-work.html
+       Jekyll Feed: Generating feed for posts
+                    ...done in 0.3591061 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-18 03:26:41
+                    _layouts/default.html
+       Jekyll Feed: Generating feed for posts
+                    ...done in 0.6004843 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-18 03:26:41
+                    _includes/subpage-header.html
+       Jekyll Feed: Generating feed for posts
+                    ...done in 0.5055671 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-18 03:28:20
+                    css/style.css
+       Jekyll Feed: Generating feed for posts
+                    ...done in 1.0269333 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-18 03:29:17
+                    css/style.css
+       Jekyll Feed: Generating feed for posts
+                    ...done in 0.3359035 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-18 03:29:32
+                    css/style.css
+       Jekyll Feed: Generating feed for posts
+                    ...done in 0.4490404 seconds.
+                    
+      Regenerating: 39 file(s) changed at 2026-04-18 03:50:35
+                    css/owl.carousel.css
+                    js/owl.carousel.min.js
+                    js/min/main.min.js
+                    js/min/plugins.min.js
+                    img/portfolio/work1.jpg
+                    img/portfolio/work2.jpg
+                    img/portfolio/work3.jpg
+                    img/portfolio/work4.jpg
+                    img/portfolio/work5.jpg
+                    img/portfolio/work6.jpg
+                    img/clients/clients-logo-9.png
+                    img/clients/clients-logo1.png
+                    img/clients/clients-logo2.png
+                    img/clients/clients-logo3.png
+                    img/clients/clients-logo4.png
+                    img/clients/clients-logo5.png
+                    img/clients/clients-logo6.png
+                    img/clients/clients-logo7.png
+                    img/clients/clients-logo8.png
+                    img/clients/clients-logo10.png
+                    img/officers/aka.png
+                    img/officers/aza.jpg
+                    img/officers/lyths.jpg
+                    img/officers/mogumi.jpg
+                    img/officers/sumi.jpg
+                    img/officers/tsuki.jpg
+                    img/officers/vantoral.png
+                    img/officers/yuzu.jpg
+                    img/officers/zetasa.jpg
+                    img/officers/zetasa.png
+                    img/dark.jpg
+                    img/fel.jpg
+                    img/item-img1.jpg
+                    img/logo.png
+                    img/mogicon.png
+                    img/mogumi.jpg
+                    img/nera.jpg
+                    officer_duties.docx
+                    officer_duties.zip
+       Jekyll Feed: Generating feed for posts
+                    ...done in 0.8990625 seconds.
+                    
+      Regenerating: 40 file(s) changed at 2026-04-18 03:54:26
+                    css/style.css
+                    jekyll-serve.log
+                    _includes/portfolio-work.html
+                    _layouts/default.html
+                    tmp_officer_doc/word/theme/theme1.xml
+                    tmp_officer_doc/word/document.xml
+                    tmp_officer_doc/word/fontTable.xml
+                    tmp_officer_doc/word/numbering.xml
+                    tmp_officer_doc/word/settings.xml
+                    tmp_officer_doc/word/styles.xml
+                    tmp_officer_doc/word/_rels/document.xml.rels
+                    tmp_officer_doc/[Content_Types].xml
+                    tmp_officer_doc/_rels/.rels
+                    css/owl.carousel.css
+                    js/min/main.min.js
+                    js/min/plugins.min.js
+                    js/owl.carousel.min.js
+                    _includes/subpage-header.html
+                    officer_duties.docx
+                    officer_duties.zip
+                    img/clients/clients-logo-9.png
+                    img/clients/clients-logo1.png
+                    img/clients/clients-logo10.png
+                    img/clients/clients-logo2.png
+                    img/clients/clients-logo3.png
+                    img/clients/clients-logo4.png
+                    img/clients/clients-logo5.png
+                    img/clients/clients-logo6.png
+                    img/clients/clients-logo7.png
+                    img/clients/clients-logo8.png
+                    img/officers/aka.png
+                    img/officers/aza.jpg
+                    img/officers/lyths.jpg
+                    img/officers/mogumi.jpg
+                    img/officers/sumi.jpg
+                    img/officers/tsuki.jpg
+                    img/officers/vantoral.png
+                    img/officers/yuzu.jpg
+                    img/officers/zetasa.jpg
+                    img/officers/zetasa.png
+       Jekyll Feed: Generating feed for posts
+                    ...done in 0.1595073 seconds.
+                    
+[2026-04-18 03:54:37] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:6 
+	C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/webrick-1.9.1/lib/webrick/httpserver.rb:82:in 'IO#eof?'
+	C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/webrick-1.9.1/lib/webrick/httpserver.rb:82:in 'WEBrick::HTTPServer#run'
+	C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/webrick-1.9.1/lib/webrick/server.rb:310:in 'block in WEBrick::GenericServer#start_thread'
+[2026-04-18 03:54:38] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:6 
+	C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/webrick-1.9.1/lib/webrick/httpserver.rb:82:in 'IO#eof?'
+	C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/webrick-1.9.1/lib/webrick/httpserver.rb:82:in 'WEBrick::HTTPServer#run'
+	C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/webrick-1.9.1/lib/webrick/server.rb:310:in 'block in WEBrick::GenericServer#start_thread'
