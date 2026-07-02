@@ -47,48 +47,6 @@
     </clipPath>
   </defs>
 
-  <style>
-    @keyframes twinkle {
-      0%, 100% { opacity: 0.25; }
-      50% { opacity: 0.9; }
-    }
-    @keyframes trimGlow {
-      0%, 100% { stroke-opacity: 0.25; }
-      50% { stroke-opacity: 0.6; }
-    }
-    @keyframes portholeFlicker {
-      0%, 40%, 100% { opacity: 0.55; }
-      20% { opacity: 1; }
-    }
-    @keyframes discoChase {
-      0%, 100% { fill: #f0b560; opacity: 0.45; transform: scale(1); }
-      50% { fill: #ff6ec7; opacity: 1; transform: scale(1.4); }
-    }
-    @keyframes antennaBob {
-      0%, 100% { transform: rotate(-4deg); }
-      50% { transform: rotate(4deg); }
-    }
-    @keyframes rimPulse {
-      0%, 100% { stroke-opacity: 0.18; }
-      50% { stroke-opacity: 0.4; }
-    }
-
-    .star { animation: twinkle 3.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-    .hull-trim { animation: trimGlow 4s ease-in-out infinite; }
-    .porthole { animation: portholeFlicker 5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-    .dance-light { animation: discoChase 1.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-    .thrust-streak { animation: twinkle 1.8s ease-in-out infinite; }
-    .antenna { animation: antennaBob 3.2s ease-in-out infinite; transform-origin: 1000px 68px; }
-    .rim-glow { animation: rimPulse 4s ease-in-out infinite; }
-
-    @media (prefers-reduced-motion: reduce) {
-      .star, .hull-trim, .porthole, .dance-light,
-      .thrust-streak, .antenna, .rim-glow {
-        animation: none;
-      }
-    }
-  </style>
-
   <rect x="0" y="0" width="1200" height="700" fill="url(#bgSky)"/>
 
   <!-- nebula glow, mostly hidden behind the hull, peeking through the sky margins -->
@@ -103,28 +61,28 @@
     <circle cx="42" cy="30" r="15" fill="#7a5cff" opacity="0.55"/>
   </g>
 
-  <circle class="star" cx="120" cy="90" r="1.6" fill="#fff" opacity="0.7" style="animation-delay: 0s;"/>
-  <circle class="star" cx="980" cy="60" r="2" fill="#fff" opacity="0.6" style="animation-delay: 0.6s;"/>
-  <circle class="star" cx="1080" cy="640" r="1.5" fill="#fff" opacity="0.5" style="animation-delay: 1.2s;"/>
-  <circle class="star" cx="70" cy="600" r="2" fill="#fff" opacity="0.6" style="animation-delay: 1.8s;"/>
-  <circle class="star" cx="640" cy="40" r="1.4" fill="#fff" opacity="0.6" style="animation-delay: 2.4s;"/>
-  <circle class="star" cx="300" cy="660" r="1.6" fill="#fff" opacity="0.5" style="animation-delay: 0.9s;"/>
-  <circle class="star" cx="1140" cy="150" r="1.4" fill="#fff" opacity="0.5" style="animation-delay: 1.5s;"/>
-  <circle class="star" cx="200" cy="30" r="1.2" fill="#fff" opacity="0.5" style="animation-delay: 2.1s;"/>
-  <circle class="star" cx="500" cy="15" r="1.3" fill="#fff" opacity="0.5" style="animation-delay: 1s;"/>
-  <circle class="star" cx="1150" cy="20" r="1.4" fill="#fff" opacity="0.6" style="animation-delay: 1.9s;"/>
+  <circle cx="120" cy="90" r="1.6" fill="#fff" opacity="0.6"/>
+  <circle cx="980" cy="60" r="2" fill="#fff" opacity="0.55"/>
+  <circle cx="1080" cy="640" r="1.5" fill="#fff" opacity="0.45"/>
+  <circle cx="70" cy="600" r="2" fill="#fff" opacity="0.55"/>
+  <circle cx="640" cy="40" r="1.4" fill="#fff" opacity="0.5"/>
+  <circle cx="300" cy="660" r="1.6" fill="#fff" opacity="0.45"/>
+  <circle cx="1140" cy="150" r="1.4" fill="#fff" opacity="0.45"/>
+  <circle cx="200" cy="30" r="1.2" fill="#fff" opacity="0.45"/>
+  <circle cx="500" cy="15" r="1.3" fill="#fff" opacity="0.45"/>
+  <circle cx="1150" cy="20" r="1.4" fill="#fff" opacity="0.5"/>
 
   <!-- rim glow behind the whole silhouette -->
-  <rect class="rim-glow" x="100" y="70" width="950" height="560" rx="110" fill="none" stroke="#f0b560" stroke-width="16" opacity="0.6" filter="url(#rimBlur)"/>
-  <polygon class="rim-glow" points="1050,150 1150,350 1050,550" fill="none" stroke="#f0b560" stroke-width="14" opacity="0.6" filter="url(#rimBlur)"/>
+  <rect x="100" y="70" width="950" height="560" rx="110" fill="none" stroke="#f0b560" stroke-width="16" opacity="0.28" filter="url(#rimBlur)"/>
+  <polygon points="1050,150 1150,350 1050,550" fill="none" stroke="#f0b560" stroke-width="14" opacity="0.28" filter="url(#rimBlur)"/>
 
   <!-- thruster speed streaks -->
-  <line class="thrust-streak" x1="-15" y1="216" x2="18" y2="216" stroke="#f0b560" stroke-width="2" opacity="0.5" style="animation-delay: 0s;"/>
-  <line class="thrust-streak" x1="-20" y1="230" x2="22" y2="230" stroke="#f0b560" stroke-width="2.5" opacity="0.6" style="animation-delay: 0.4s;"/>
-  <line class="thrust-streak" x1="-15" y1="244" x2="18" y2="244" stroke="#f0b560" stroke-width="2" opacity="0.5" style="animation-delay: 0.8s;"/>
-  <line class="thrust-streak" x1="-15" y1="456" x2="18" y2="456" stroke="#f0b560" stroke-width="2" opacity="0.5" style="animation-delay: 0.2s;"/>
-  <line class="thrust-streak" x1="-20" y1="470" x2="22" y2="470" stroke="#f0b560" stroke-width="2.5" opacity="0.6" style="animation-delay: 0.6s;"/>
-  <line class="thrust-streak" x1="-15" y1="484" x2="18" y2="484" stroke="#f0b560" stroke-width="2" opacity="0.5" style="animation-delay: 1s;"/>
+  <line x1="-15" y1="216" x2="18" y2="216" stroke="#f0b560" stroke-width="2" opacity="0.4"/>
+  <line x1="-20" y1="230" x2="22" y2="230" stroke="#f0b560" stroke-width="2.5" opacity="0.5"/>
+  <line x1="-15" y1="244" x2="18" y2="244" stroke="#f0b560" stroke-width="2" opacity="0.4"/>
+  <line x1="-15" y1="456" x2="18" y2="456" stroke="#f0b560" stroke-width="2" opacity="0.4"/>
+  <line x1="-20" y1="470" x2="22" y2="470" stroke="#f0b560" stroke-width="2.5" opacity="0.5"/>
+  <line x1="-15" y1="484" x2="18" y2="484" stroke="#f0b560" stroke-width="2" opacity="0.4"/>
 
   <!-- tail engine pods -->
   <rect x="55" y="205" width="75" height="50" rx="18" fill="#0a2440" stroke="#0d6aa8" stroke-width="2"/>
@@ -157,7 +115,7 @@
   <polygon points="1050,550 1015,578 1050,520" fill="url(#hullFill)" stroke="#f0b560" stroke-width="1.5" opacity="0.9"/>
 
   <!-- pom-pom antenna -->
-  <g class="antenna">
+  <g>
     <line x1="1000" y1="70" x2="1000" y2="34" stroke="#f0b560" stroke-width="2.5"/>
     <circle cx="1000" cy="26" r="6" fill="url(#pompomFill)"/>
     <circle cx="994" cy="21" r="4" fill="url(#pompomFill)"/>
@@ -166,7 +124,7 @@
   </g>
 
   <!-- hull trim line -->
-  <rect class="hull-trim" x="118" y="88" width="914" height="524" rx="96" fill="none" stroke="#f0b560" stroke-width="1.5" opacity="0.35"/>
+  <rect x="118" y="88" width="914" height="524" rx="96" fill="none" stroke="#f0b560" stroke-width="1.5" opacity="0.4"/>
 
   <!-- rivets along the hull trim corners -->
   <g fill="#f0b560" opacity="0.45">
@@ -185,7 +143,7 @@
     <line x1="590" y1="88" x2="598" y2="78" stroke="#f0b560" stroke-width="2"/>
     <line x1="598" y1="88" x2="606" y2="80" stroke="#f0b560" stroke-width="2"/>
   </g>
-  <circle class="porthole" cx="588" cy="71" r="3.5" fill="#f0b560" style="animation-delay: 0.5s;"/>
+  <circle cx="588" cy="71" r="3.5" fill="#f0b560"/>
 
   <!-- deck divider lines -->
   <line x1="140" y1="300" x2="1010" y2="300" stroke="#f0b560" stroke-width="1.5" opacity="0.3"/>
@@ -218,24 +176,24 @@
 
   <!-- porthole windows -->
   <g fill="#0a2440" stroke="#f0b560" stroke-width="1.5" opacity="0.8">
-    <circle class="porthole" cx="200" cy="160" r="10" style="animation-delay: 0s;"/>
-    <circle class="porthole" cx="260" cy="160" r="10" style="animation-delay: 0.8s;"/>
-    <circle class="porthole" cx="650" cy="160" r="10" style="animation-delay: 1.6s;"/>
-    <circle class="porthole" cx="710" cy="160" r="10" style="animation-delay: 2.4s;"/>
-    <circle class="porthole" cx="200" cy="440" r="10" style="animation-delay: 3.2s;"/>
-    <circle class="porthole" cx="260" cy="440" r="10" style="animation-delay: 0.4s;"/>
-    <circle class="porthole" cx="650" cy="440" r="10" style="animation-delay: 1.2s;"/>
-    <circle class="porthole" cx="710" cy="440" r="10" style="animation-delay: 2s;"/>
+    <circle cx="200" cy="160" r="10"/>
+    <circle cx="260" cy="160" r="10"/>
+    <circle cx="650" cy="160" r="10"/>
+    <circle cx="710" cy="160" r="10"/>
+    <circle cx="200" cy="440" r="10"/>
+    <circle cx="260" cy="440" r="10"/>
+    <circle cx="650" cy="440" r="10"/>
+    <circle cx="710" cy="440" r="10"/>
   </g>
 
   <!-- lower deck floor lights -->
   <g fill="#f0b560" opacity="0.6">
-    <circle class="dance-light" cx="220" cy="565" r="4" style="animation-delay: 0s;"/>
-    <circle class="dance-light" cx="340" cy="565" r="4" style="animation-delay: 0.16s;"/>
-    <circle class="dance-light" cx="460" cy="565" r="4" style="animation-delay: 0.32s;"/>
-    <circle class="dance-light" cx="580" cy="565" r="4" style="animation-delay: 0.48s;"/>
-    <circle class="dance-light" cx="700" cy="565" r="4" style="animation-delay: 0.64s;"/>
-    <circle class="dance-light" cx="820" cy="565" r="4" style="animation-delay: 0.8s;"/>
-    <circle class="dance-light" cx="930" cy="565" r="4" style="animation-delay: 0.96s;"/>
+    <circle cx="220" cy="565" r="4"/>
+    <circle cx="340" cy="565" r="4"/>
+    <circle cx="460" cy="565" r="4"/>
+    <circle cx="580" cy="565" r="4"/>
+    <circle cx="700" cy="565" r="4"/>
+    <circle cx="820" cy="565" r="4"/>
+    <circle cx="930" cy="565" r="4"/>
   </g>
 </svg>
