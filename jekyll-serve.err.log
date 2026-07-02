@@ -1,4 +1,3 @@
-  Please add the following to your Gemfile to avoid polling for changes:
-    gem 'wdm', '>= 0.1.0'
-[33m             Error: No such file or directory @ rb_file_s_stat - C:/Users/alanl/Desktop/mogshipenterprise.github.io-main/img/fc-room/dance-room-a.jpg[0m
-[33m             Error: Run jekyll build --trace for more information.[0m
+C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/jekyll-4.4.1/lib/jekyll.rb:26: warning: logger was loaded from the standard library, but will no longer be part of the default gems starting from Ruby 4.0.0.
+You can add logger to your Gemfile or gemspec to silence this warning.
+^C^C
